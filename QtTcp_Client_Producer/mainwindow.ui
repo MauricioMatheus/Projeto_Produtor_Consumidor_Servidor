@@ -171,6 +171,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <height>21</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>99</number>
+    </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
@@ -218,7 +221,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber">
+   <widget class="QLCDNumber" name="lcdNumberTiming">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -293,7 +296,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <connection>
    <sender>horizontalSliderTiming</sender>
    <signal>actionTriggered(int)</signal>
-   <receiver>lcdNumber</receiver>
+   <receiver>lcdNumberTiming</receiver>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
